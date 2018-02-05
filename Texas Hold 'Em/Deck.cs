@@ -38,6 +38,11 @@ namespace Texas_Hold__Em
                 tempCard = this[r.Next(this.Count)];
                 tempList.Add(tempCard);
                 this.Remove(tempCard);
+
+                foreach (Card card in tempList)
+                {
+                    this.Add(card);
+                }
             }
         }
 
