@@ -44,6 +44,15 @@ namespace Texas_Hold__Em
                     this.Add(card);
                 }
             }
+
+        }
+        
+        public Card Deal()
+        {
+            Card c = this.ElementAt(this.Count - 1);
+            this.RemoveAt(this.Count - 1);
+
+            return c;
         }
 
         public void Reset()
